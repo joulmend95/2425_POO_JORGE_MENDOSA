@@ -131,8 +131,8 @@ def menu():
         # Opción para actualizar un producto por ID
         elif opcion == '3':
             id_producto = input("Ingrese el ID del producto a actualizar: ")
-            cantidad = input("Ingrese la nueva cantidad (dejar en blanco si no desea modificar): ")
-            precio = input("Ingrese el nuevo precio (dejar en blanco si no desea modificar): ")
+            cantidad = input("Ingrese la nueva cantidad (dejar en blanco para no modificar): ")
+            precio = input("Ingrese el nuevo precio (dejar en blanco para no modificar): ")
             # Se convierten los valores ingresados si no están en blanco
             cantidad = int(cantidad) if cantidad else None
             precio = float(precio) if precio else None
