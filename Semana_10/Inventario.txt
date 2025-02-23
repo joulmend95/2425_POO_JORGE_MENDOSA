@@ -1,0 +1,6 @@
+001,Mouse,5,25.0
+002,Teclado,5,44.99
+003,Monitor,4,80.0
+004,Memoria RAM DDR4 16GB,5,44.99
+005,CORE I3 10105 10MA 3.60 GHZ LGA 1200 VIDEO ,3,129.99
+006,Mother Gigabyte Z490 Ud Ac Wifi Ddr4 Intel 10th Gen Lga 1200,2,269.95
