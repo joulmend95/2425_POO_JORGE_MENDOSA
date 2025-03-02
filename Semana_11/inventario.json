@@ -10,5 +10,11 @@
         "nombre": "soya",
         "cantidad": 5,
         "precio": 2.5
+    },
+    "565": {
+        "id": "565",
+        "nombre": "Arroz",
+        "cantidad": 5,
+        "precio": 14.5
     }
 }
