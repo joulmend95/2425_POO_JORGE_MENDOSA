@@ -1,0 +1,30 @@
+{
+    "978-84-61716-09-8": {
+        "isbn": "978-84-61716-09-8",
+        "titulo": "LA VOZ DE TU ALMA",
+        "autor": "Lain Garcia Calvo",
+        "categoria": "Exito y Superacion",
+        "prestado": false
+    },
+    "978-9978-71-831-5": {
+        "isbn": "978-9978-71-831-5",
+        "titulo": "DICCIONARIO ESTUDIANTIL LNS",
+        "autor": "Editorial Don Bosco",
+        "categoria": "Academico",
+        "prestado": false
+    },
+    "978-84-942747-8-7": {
+        "isbn": "978-84-942747-8-7",
+        "titulo": "PIENSE Y HAGASE RICO",
+        "autor": "Napoleon Hill",
+        "categoria": "Exito y Superacion",
+        "prestado": false
+    },
+    "978-9942-8607-0-5": {
+        "isbn": "978-9942-8607-0-5",
+        "titulo": "ESCUELA DE FORMACION - PRIMER NIVEL MJXXIII",
+        "autor": "Movimientos de Retiros Parroquiales",
+        "categoria": "Religioso",
+        "prestado": false
+    }
+}

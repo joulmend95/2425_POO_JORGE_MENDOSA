@@ -19,20 +19,20 @@ class Libro:
 
 
 class Biblioteca:
-    def __init__(self, archivo_jason='biblioteca.jason'):
-        self.archivo_jason = archivo_jason
+    def __init__(self, archivo_json='biblioteca.json'):
+        self.archivo_json = archivo_json
         self.libros = self.cargar_libros()
 
     def cargar_libros(self):
         try:
-            with open(self.archivo_jason, 'r') as archivo:
+            with open(self.archivo_json, 'r') as archivo:
                 datos_libros = json.load(archivo)
                 return {isbn: Libro(**datos) for isbn,datos in datos_libros.items()}
         except FileNotFoundError:
             return {}
 
     def guardar_libros(self):
-        with open(self.archivo_jason, 'w') as archivo:
+        with open(self.archivo_json, 'w') as archivo:
             json.dump({isbn: libro.to_dict() for isbn,libro in self.libros.items()}, archivo, indent=4)
 
 
