@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import ttk
+from tkinter import messagebox
 from tkcalendar import DateEntry  # Importamos DateEntry para la selección de fechas
-
 
 # Función para agregar eventos a la lista
 def agregar_evento():
@@ -24,6 +24,13 @@ def agregar_evento():
 
         entry_descripcion.delete(0, tk.END)
 
+# Función para eliminar el evento seleccionado en la lista
+def eliminar_evento():
+    selected_item = tree.selection()
+    if selected_item:
+        confirm = messagebox.askyesno("Confirmar eliminación", "¿Estás seguro de que deseas eliminar este evento?")
+        if confirm:
+            tree.delete(selected_item)
 
 # Creación de la ventana principal de la aplicación
 root = tk.Tk()
@@ -83,7 +90,7 @@ boton_agregar = tk.Button(frame_buttons, text="Agregar Evento", command=agregar_
 boton_agregar.pack(side=tk.LEFT, padx=5)
 
 # Botón para eliminar el evento seleccionado en la lista
-boton_eliminar = tk.Button(frame_buttons, text="Eliminar Evento", command=lambda: tree.delete(tree.selection()))
+boton_eliminar = tk.Button(frame_buttons, text="Eliminar Evento", command=eliminar_evento)
 boton_eliminar.pack(side=tk.LEFT, padx=5)
 
 # Botón para salir de la aplicación
